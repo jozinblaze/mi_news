@@ -15,7 +15,7 @@ description 'ox script template'
 dependencies { '/server:7290', '/onesync', 'ox_core', 'ox_inventory', 'ox_target', 'ox_lib' }
 
 ----    Manifest Information    ----
-shared_scripts { '@ox_core/lib/init.lua', 'shared/*.lua', 'data/*.lua' }
+shared_scripts { '@ox_core/lib/init.lua',  '@ox_lib/init.lua', 'shared/*.lua', 'data/*.lua' }
 
 client_scripts { '@ox_core/imports/client.lua', 'client/**/*.lua' }
 
@@ -23,4 +23,4 @@ server_scripts { '@oxmysql/lib/MySQL.lua', '@ox_core/imports/server.lua', 'serve
 
 ui_page 'web/index.html'
 
-files { 'web/**/*', 'locales/*.json' }
+files { 'web/**/*' }
